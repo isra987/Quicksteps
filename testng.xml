@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="quickStepsProject">
+    <listeners>
+      <!---  <listener class-name="utilities.Reporting"/> -->
+       <listener class-name="extentReporting.report"/>
+
+    </listeners>
+    <test name="Quickstep App Test">
+           <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.CustomerTest"/>
+       <!--  <class name="testCases.LoginTest"/> -->
+       <!-- <class name="testCases.SignUpTest"/> -->
+     <!-- <class name="testCases.LoginTDD"/> -->
+     <!--   <class name="testCases.OfferCreateTest"/> -->
+    </classes>
+    
+    </test>
+
+</suite>
